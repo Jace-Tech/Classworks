@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+label,
+input {
+    display: block;
+}
+
+
+/* Main */
+
+body {
+    --purple: #9a0cea;
+    --lightblue: #54b5d1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: linear-gradient(to right, var(--lightblue), var(--purple));
+}
+
+form {
+    min-width: 300px;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+form h2 {
+    font-size: 1.6rem;
+    margin: .5rem 0;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cancel-btn {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #555;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+.form-group label {
+    font-size: .9rem;
+    color: #555;
+    margin-bottom: .3rem;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: .5rem 1rem;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: .9rem;
+    color: #555;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+form p {
+    margin: .5rem 0;
+}
+
+.form-link {
+    color: var(--lightblue);
+    font-family: Poppins;
+    font-size: .85rem;
+}
+
+.form-btn {
+    display: block;
+    width: 100%;
+    padding: .8rem;
+    cursor: pointer;
+    font-size: .85rem;
+    color: #fff;
+    background: linear-gradient(to right, var(--lightblue), var(--purple));
+    border: none;
+}
+
+.signup {
+    text-align: center;
+    color: #555;
+    font-family: Poppins;
+    font-size: 0.85rem;
+    margin-top: .5rem;
+}
+
+.message {
+    text-align: center;
+    font-size: .85rem;
+    font-family: Poppins;
+    padding: .8rem 0;
+    margin-top: 1rem;
+}
+
+.success {
+    background-color: rgba(26, 165, 26, 0.35);
+    color: #fff;
+}
+
+.danger {
+    background-color: rgba(247, 60, 60, 0.45);
+    color: #fff;
+}

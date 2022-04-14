@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        td {
+            min-width: 60px;
+            height: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tables [Simple Table] -->
+    <table border="1">
+
+        <!-- Table Row -->
+        <tr>
+            <!-- Td [Table data] -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- Table Row -->
+        <tr>
+            <!-- Td [Table data] -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- Table Row -->
+        <tr>
+            <!-- Td [Table data] -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- Using table heading [<th>] -->
+    <table border="1">
+        <tr>
+            <th>S/N</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Subject</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>A</td>
+            <td>PHP</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Doe</td>
+            <td>B</td>
+            <td>JS</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Mark</td>
+            <td>C</td>
+            <td>Node</td>
+        </tr>
+    </table>
+
+    <!-- Colspanning -->
+    <table border="1">
+        <tr>
+            <th>Days</th>
+            <th>9am - 11am</th>
+            <th>11am - 1pm</th>
+            <th>1pm - 3pm</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">PHP</td>
+            <td>HTML</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>CSS</td>
+            <td>JS</td>
+            <td>Node</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>PHP</td>
+            <td colspan="2">Node</td>
+        </tr>
+    </table>
+
+    <!-- Class Work -->
+    <table>
+
+        <tr>
+            <th>Days</th>
+            <th>9am - 11am</th>
+            <th>11am - 1pm</th>
+            <th>1pm - 3am</th>
+            <th>3pm - 5pm</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">HTML</td>
+            <td colspan="2">CSS</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>JS</td>
+            <td colspan="2">Node</td>
+            <td>PHP</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td colspan="2">React</td>
+            <td>JS</td>
+            <td>Node</td>
+        </tr>
+
+        <tr>
+            <td>Thursday</td>
+            <td colspan="3">Networking</td>
+            <td>HTMl</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td colspan="4">React Native</td>
+        </tr>
+    </table>
+
+    <!-- Row span -->
+    <table>
+        <tr>
+            <th>Bil</th>
+            <th>Department</th>
+            <th>Staff</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="2">ICT</td>
+            <td>John</td>
+        </tr>
+
+        <tr>
+            <td>Mary</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Finance</td>
+            <td>Admin</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">3</td>
+            <td rowspan="2">Admin</td>
+            <td>James</td>
+        </tr>
+
+        <tr>
+            <td>Smith</td>
+        </tr>
+    </table>
+
+    <!-- Table Caption -->
+    <table border="1" cellspacing="10" cellpadding="20">
+        <caption>School Time Table</caption>
+
+        <tr>
+            <th>Days</th>
+            <th>9am - 11am</th>
+            <th>11am - 1pm</th>
+            <th>1pm - 3am</th>
+            <th>3pm - 5pm</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">HTML</td>
+            <td colspan="2">CSS</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>JS</td>
+            <td colspan="2">Node</td>
+            <td>PHP</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td colspan="2">React</td>
+            <td>JS</td>
+            <td>Node</td>
+        </tr>
+
+        <tr>
+            <td>Thursday</td>
+            <td colspan="3">Networking</td>
+            <td>HTMl</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td colspan="4">React Native</td>
+        </tr>
+    </table>
+</body>
+
+</html>

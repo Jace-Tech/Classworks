@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movement</title>
+
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+            }
+
+            .main-container {
+                flex: .85;
+                width: 100%;
+                position: relative;
+            }
+
+            .box {
+                width: 50px;
+                height: 50px;
+                background-color: #333;
+                margin: 1rem;
+                position: absolute;
+            }
+
+            .options-container {
+                flex: .15;
+                padding: 2rem 0;
+                position: relative;
+                width: 100%;
+                background-color: #efefef;
+                gap: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .btn {
+                display: inline-block;
+                min-width: 80px;
+                padding: .8rem 1rem;
+                border: none;
+                background-color: #333;
+                text-transform: uppercase;
+                color: #fff;
+                cursor: pointer;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: .8rem;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+
+            .float {
+                position: absolute;
+            }
+
+            .up {
+                top: 5px;
+            }
+
+            .down {
+                bottom: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="box"></div>
+        </div>
+
+        <div class="options-container">
+            <button data-up class="btn float up">Up</button>
+            <button data-down class="btn float down">Down</button>
+            <button data-left class="btn">Left</button>
+            <button data-right class="btn">Right</button>
+        </div>
+
+        <!-- Already Linked -->
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="flex">
+                <input type="number" placeholder="English Score" name="english" id="">
+                <input type="number" placeholder="Maths Score" name="maths" id="">
+            </div>
+
+            <div class="flex">
+                <input type="number" placeholder="Chemistry Score" name="chemistry" id="">
+                <input type="number" placeholder="Physics Score" name="physics" id="">
+            </div>
+    
+            <button>Get Grades</button>
+        </form>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Remark</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>English</td>
+                        <td id="english-grade">A</td>
+                        <td id="english-remark">Distinction</td>
+                    </tr>
+
+                    <tr>
+                        <td>Math</td>
+                        <td id="maths-grade">A</td>
+                        <td id="maths-remark">Distinction</td>
+                    </tr>
+
+                    <tr>
+                        <td>Physics</td>
+                        <td id="physics-grade">A</td>
+                        <td id="physics-remark">Distinction</td>
+                    </tr>
+
+                    <tr>
+                        <td>Chemistry</td>
+                        <td id="chemistry-grade">A</td>
+                        <td id="chemistry-remark">Distinction</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

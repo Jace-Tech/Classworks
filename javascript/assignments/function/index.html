@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const getMax = (arr) => {
+            let max = arr[0]
+
+            console.time("Foreach")
+            for(let i = 0; i < arr.length; i++) {
+                if(arr[i] < max){
+                    max = arr[i]
+                }
+            }
+            console.log(max)
+            console.timeEnd("Foreach")
+        }
+
+        // Sorting
+        const getMaxAlt = (arr) => {
+            console.time("Sort")
+
+            arr.sort((a, b) => b - a)
+            const max = arr[arr.length - 1]
+            console.log(max)
+            console.timeEnd("Sort")
+
+        }
+
+        getMax([6, 2, 600, 1,  7, 8, 2])
+        getMaxAlt([600, 2, -1, 7, 8, 2])
+    </script>
+</body>
+</html>

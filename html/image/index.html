@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image</title>
+
+        <style>
+            * {
+                margin: 0;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .image-container {
+                width: 60%;
+                border: 2px solid #000;
+                height: 50vh; /* vh -> view height */
+            }
+
+            .image-container img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                min-height: 200px;
+                max-height: 250px;
+                min-width: 500px;
+                max-width: 700px;
+            }
+
+            .btn-link{
+                display: inline-block;
+                padding: 12px 25px;
+                border: 1px solid #000;
+                background-color: #f00;
+                /* transition: background-color 2s ease 2s , color 3s, border-radius 1s; */
+                transition: all 1s;
+                /* property duration timing-function delay*/
+            }
+
+            .btn-link:hover {
+                background-color: blue;
+                color: white;
+                border-radius: 10px;
+            }
+
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: #000;
+                transition: width 1s, height 1s;
+            }
+
+            .box:hover {
+                width: 200px;
+                height: 200px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- <div>
+            <img src="./img/house3.jpg" style="float: right;" width="300" height="300" alt="House Image"  />
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolorum expedita deserunt debitis earum esse tempora architecto placeat officiis quasi accusantium cum laboriosam labore iste facere exercitationem id quod quidem, similique unde? Amet non similique fuga. Eos quod, quia illo voluptatum quos vero odio earum cupiditate dicta consequatur, officiis sapiente.</p>
+        </div>
+        <div style="clear: both"></div>
+        <h2>Testing Again</h2> -->
+
+        <!-- figure -->
+        <!-- <figure>
+            <img src="./img/house3.jpg" alt="House Image"  />
+
+            <img src="./img/house1.jpg" alt="House Image"  />
+
+            <img src="./img/house4.jpg" alt="House Image"  />
+            
+            <figcaption>This are all house images</figcaption>
+        </figure> -->
+
+        <!-- minHeight and minWidth -->
+
+        <!-- <div class="image-container">
+            <img src="./img/house2.jpg" alt="">
+        </div> -->
+
+        <!-- Padding Property -->
+        <a href="#" class="btn-link">Padding</a>
+
+        <div class="box"></div>
+    </body>
+</html>

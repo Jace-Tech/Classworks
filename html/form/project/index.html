@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <form action="../../form.php" method="post">
+        <h2>login form</h2>
+        <button class="cancel-btn">&times;</button>
+
+        <div class="form-group">
+            <label for="username">Email or Phone</label>
+            <input type="text" class="form-control" required name="user" id="username">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" required name="password" id="password">
+            <p>
+                <a href="" class="form-link">forgot password</a>
+            </p>
+        </div>
+
+        <div class="form-btn-container">
+            <button class="form-btn" type="submit">Login</button>
+            <!-- <input type="submit" value="Login"> -->
+        </div>
+
+        <p class="signup">
+            Not a member? <a href="" class="form-link">Signup now</a>
+        </p>
+
+        <!-- Use this as the message box -->
+        <div class="message "></div>
+    </form>
+</body>
+
+</html>

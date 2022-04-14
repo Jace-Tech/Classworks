@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <form>
+        <!-- Text -->
+        <div>
+            <label for="name">Name</label>
+            <input list="names" name="name" id="name" type="text" value="" required="required"
+                placeholder="Enter your name" />
+
+            <datalist id="names">
+                <option>Jace Alexander</option>
+                <option>John Smith</option>
+                <option>Jane Doe</option>
+            </datalist>
+        </div>
+
+        <!-- Email -->
+        <div>
+            <input type="email" placeholder="Enter your email address" />
+        </div>
+
+        <!-- Password -->
+        <div>
+            <input type="password" placeholder="Enter your password" />
+        </div>
+
+        <!-- Number -->
+        <div>
+
+            <input type="number" placeholder="Enter a number" />
+        </div>
+
+        <!-- Telephone -->
+        <div>
+
+            <input type="tel" placeholder="Enter your phone number" />
+        </div>
+
+        <!-- Date -->
+        <div>
+            <input type="date">
+        </div>
+
+        <!-- Color -->
+        <div>
+            <input type="color">
+        </div>
+
+        <!-- Search -->
+        <div>
+            <input type="search" placeholder="Search name...">
+        </div>
+
+        <!-- File -->
+        <div>
+            <input type="file" accept=".pdf, .png, .jpg" multiple name="image[]" />
+        </div>
+
+        <!-- Date-time -->
+        <div>
+            <input type="datetime" />
+        </div>
+
+        <!-- Month -->
+        <div>
+            <input type="month" />
+        </div>
+
+        <!-- Week -->
+        <div>
+            <input type="week" />
+        </div>
+
+        <!-- Checkbox -->
+        <div>
+            <label for="god-of-war">
+                <input type="checkbox" id="god-of-war" />
+                God of war
+            </label>
+
+            <label for="uncharted">
+                <input type="checkbox" id="uncharted" />
+                Uncharted
+            </label>
+
+            <label for="assassins-creed">
+                <input type="checkbox" id="assassins-creed" />
+                Assassins Creed
+            </label>
+        </div>
+
+        <!-- Radio -->
+        <div>
+            <label for="male">
+                <input name="gender" type="radio" id="male" />
+                Male
+            </label>
+
+            <label for="female">
+                <input name="gender" type="radio" id="female" />
+                Female
+            </label>
+        </div>
+
+        <!-- Select -->
+        <select name="countries" id="">
+            <option value="" disabled>Select your country</option>
+            <option value="Nigeria" selected>Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="South Africa">South Africa</option>
+        </select>
+
+        <textarea name="bio" id="" style="resize: vertical;"> cols="30" rows="10">This is a default value</textarea>
+
+        <!-- Submit -->
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+</body>
+
+</html>
